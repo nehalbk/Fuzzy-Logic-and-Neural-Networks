@@ -1,4 +1,5 @@
-# Trapezoidal Membership function
+# @author Nehal Kankanawadi <nehalbk333@gmail.com>
+#  Trapezoidal Membership function
 #         * * * * * * * 
 #       * |           | *
 #      *  |           |  *
@@ -10,14 +11,23 @@
 # a       b           c       d
 #   x ----->
 
-# co-ordinates
-a=10
-b=30
-c=100
-d=400
+print(' Trapezoidal Membership function')
+print('         * * * * * * * ')
+print('       * |           | *')
+print('      *  |           |  *')
+print('     *   |           |   *        ^')
+print('    *    |           |    *       |')
+print('   *     |           |     *      |')
+print('  *      |           |      *     |')
+print(' * * * * * * * * * * * * * * *    y')
+print(' a       b           c       d')
+print('   x ----->')
 
-# x values
-x=400
+# co-ordinates input
+a,b,c,d = [int(x) for x in input("Enter the values for a,b,c and d: ").split()]
+
+# x value input
+x=int(input("Enter the values for x: "))
 
 # Using trignometry
 if x<=b:
@@ -31,8 +41,8 @@ else:
     y=m*(x-c)+1
 
 # Using fuzzy rule
-ytria=round(max(min((x-a)/(b-a),1,(d-x)/(d-c)),0),3)
-y=round(y,3)
+ytria=round(max(min((x-a)/(b-a),1,(d-x)/(d-c)),0),4)
+y=round(y,4)
 
 print('Membership Function Value using trignometry:',y)
 print('Membership Function Value using fuzzy rule:',ytria)
