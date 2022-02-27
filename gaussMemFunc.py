@@ -1,14 +1,16 @@
-#Gaussian Membership Function
-# co-ordinates
+# @author Nehal Kankanawadi <nehalbk333@gmail.com> 
+# Gaussian Membership Function
+
 import math
-mean=100
-stdDev=20
-e=2.7182818284590452353602874713527
+
+# co-ordinates
+mean=int(input("Enter the value for mean: "))
+stdDev=int(input("Enter the value for Standard Deviation: "))
 
 # x values
-x=80
+x=int(input("Enter teh value for x: "))
 
 # Using trignometry
-y=1/(math.pow(e,(0.5*math.pow(((x-mean)/stdDev),2))))
+y=round(1/(math.exp(0.5*(((x-mean)/stdDev)**2))),4)
 
 print(y)
