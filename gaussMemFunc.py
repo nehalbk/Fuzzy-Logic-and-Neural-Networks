@@ -13,4 +13,4 @@ x=int(input("Enter teh value for x: "))
 # Using trignometry
 y=round(1/(math.exp(0.5*(((x-mean)/stdDev)**2))),4)
 
-print(y)
+print('Membership Function Value : ',y)
