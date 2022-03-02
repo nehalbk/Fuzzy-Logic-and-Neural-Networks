@@ -24,10 +24,10 @@ print(' a       b           c       d')
 print('   x ----->')
 
 # co-ordinates input
-a,b,c,d = [int(x) for x in input("Enter the values for a,b,c and d: ").split()]
+a,b,c,d = [float(x) for x in input("Enter the values for a,b,c and d: ").split()]
 
 # x value input
-x=int(input("Enter the values for x: "))
+x=float(input("Enter the values for x: "))
 
 # Using trignometry
 if x<=b:
