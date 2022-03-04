@@ -4,11 +4,11 @@
 import math
 
 # co-ordinates
-mean=int(float("Enter the value for mean: "))
-stdDev=int(float("Enter the value for Standard Deviation: "))
+mean=float(input("Enter the value for mean: "))
+stdDev=float(input("Enter the value for Standard Deviation: "))
 
 # x values
-x=int(float("Enter teh value for x: "))
+x=float(input("Enter teh value for x: "))
 
 # Using trignometry
 y=round(1/(math.exp(0.5*(((x-mean)/stdDev)**2))),4)
