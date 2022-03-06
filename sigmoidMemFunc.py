@@ -4,11 +4,11 @@
 import math
 
 # co-ordinates
-a=int(input("Enter the value for slope (a): "))
-b=int(input("Enter the value for b (y=0.5): "))
+a=float(input("Enter the value for slope (a): "))
+b=float(input("Enter the value for b (y=0.5): "))
 
 # x values
-x=int(input("Enter the value for x: "))
+x=float(input("Enter the value for x: "))
 
 # Using trignometry
 y=round(1/(1+math.exp(-a*(x-b))),4)
